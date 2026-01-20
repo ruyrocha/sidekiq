@@ -11,6 +11,7 @@ require "sidekiq/api"
 describe Sidekiq::Metrics do
   before do
     @config = reset!
+    @whence = nil
   end
 
   def fixed_time
